@@ -1,2 +1,2 @@
 # EthioStock
- - Developed a website that provides a platform where it shows information about the area in between large cities . -My job description was as follows: - To collaborate with the UI/Ux designers and offer input on each point - Developing the site from scratch using PHP programming language - Testing the website before deployment - Launching the website
+The project is a web-based software that makes it easy for investors and business owners to connect with the stock exchange. Plus the platform is expected to help users make business decisions using graphs, technical indicators, and analysis; where investors and traders make decisions about buying and selling.
