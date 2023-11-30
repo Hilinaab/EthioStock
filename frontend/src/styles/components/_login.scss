@@ -1,0 +1,124 @@
+$headerBackgroundColor:rgb(210,235,231);
+$navBarBackgroundColor:rgb(46,175,143);
+$secondaryBtnColor:rgb(27,205,172);//buy
+$placeholderTextColor: rgba(160, 160, 160, 0.103);
+$linksColor:rgb(24,144,255); 
+
+//LoginSignupHeader
+
+.login-signup-head{
+  text-align: center;
+  .main-header{
+    font-weight: bolder;
+    font-size: 50px;
+  }
+  .sub-header{
+    color: gray;
+    font-style: italic;
+  }
+}
+// Flex box container
+.login-flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+//Left side(ads)
+.login-signup-left-side{
+  margin: 5% 0 0 15%;
+  width: 35%;
+  border-right: solid 1px gray;
+  p{
+    padding:1%;
+    font-size: 20px;
+  }
+  .icon{
+    padding:1%;
+  }
+
+}
+
+//Login Form(the right flexbox)
+.login-signup-right-side{
+  margin-top: 3%;
+  width: 45%;
+  margin-left: 3%;
+}
+h1{
+  margin-left: 25%;;
+}
+
+@mixin login-signup-input-forms {
+  input[type = text], input[type = password]{
+    padding:3%;
+    width:65%;
+    border-radius: 20px;
+    background-color: $placeholderTextColor;
+    font-size: 20px;
+  }
+  input::placeholder{
+    font-style: italic;
+    color:rgba(160, 160, 160, 0.5);
+  }
+  .signup-link{
+    border: none;
+    cursor: pointer;
+    color: $linksColor;
+  }
+}
+
+.login-form, .signup-form{
+@include login-signup-input-forms();
+
+.login-submit-btn{
+    cursor: pointer;
+    background-color: $secondaryBtnColor;
+    color:white;
+    font-weight: bold;
+    margin: 3% 0 0 18%;
+    width:30%;
+
+  }
+}
+.login-form-forgot{
+margin-left: 20%;
+color: $linksColor;
+}
+.authentication-error{
+  color:red;
+  font-weight: bold;
+}
+//for mobile device
+@media only screen and (max-width: 600px) {
+  // Flex box container
+  .login-flex-container {
+    display: block;
+    justify-content: center;
+  }
+
+  .login-signup-left-side{
+    width: 100%;
+    border:none;
+    p{
+      padding:1%;
+    }
+    .icon{
+      padding:1%;
+    }
+
+  }
+  .login-signup-right-side{
+    margin-top: 3%;
+    width: 100%;
+    margin-left: 3%;
+  }
+  h1{
+    margin-left: 25%;;
+  }
+
+}
+
+//for tablet
+@media only screen and (max-width: 600px) {
+  
+}
